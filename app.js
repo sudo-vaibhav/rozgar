@@ -8,7 +8,6 @@ const worker = require("./routes/worker/worker");
 
 mongoose.set("useFindAndModify", false);
 
-//for local testing use: "mongodb://127.0.0.1:27017/hackportal
 mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
