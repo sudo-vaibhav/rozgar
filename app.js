@@ -21,4 +21,5 @@ db.once("open", function () {
 });
 
 app.use("/worker", worker);
-app.listen(1337);
+const port = process.env.PORT || 3000;
+app.listen(port);
