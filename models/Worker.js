@@ -1,0 +1,42 @@
+const mongoose = require("mongoose");
+//skill
+//pin code
+//mobile
+
+const workerSchema = new mongoose.Schema(
+  {
+    skill: {
+      type: String,
+      enum: [
+        "driver",
+        "labourer",
+        "maid",
+        "guard",
+        "carpenter",
+        "plumber",
+        "electrician",
+      ],
+      required: true,
+    },
+    pinCode: {
+      type: String,
+      trim: true,
+      match: [/^\d{6}$/, "invalid pin code"],
+      required: true,
+    },
+    mobile: {
+      type: String,
+      match: [/^\+91\d{10}$/, "Valid Indian numbers allowed only"],
+      required: true,
+      unique: true,
+    },
+    district: {
+      type: String,
+    },
+  },
+  { timestamps: true }
+);
+
+const Worker = mongoose.model("Worker", workerSchema);
+
+module.exports = Worker;
