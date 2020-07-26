@@ -21,6 +21,7 @@ The message will be sent to a toll free number in the following format:
 <br>
 Here pin-code is the pin code of the location the worker wants to find employment in and skill-code represents the following skills:
 <br>
+<p align="center">
 <table>
   <tr>
     <th>Skill Code</th>
@@ -84,7 +85,7 @@ Here pin-code is the pin code of the location the worker wants to find employmen
       </td>
     </tr>
 </table>
-
+</p>
 This adds the worker to the worker database and automatically finds the district of the worker like this:
 <br>
 <p align="center">
