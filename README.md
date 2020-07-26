@@ -6,7 +6,9 @@ link to the NodeJS backend for this app : https://github.com/sudo-vaibhav/apptit
 # The Problems This Solves
 ## For  Workers
 <br>
-<img align="center" height="600px" src="https://images.unsplash.com/photo-1531668361947-d00e652ac030?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" />
+<p align="center">
+  <img height="600px" src="https://images.unsplash.com/photo-1531668361947-d00e652ac030?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"/>
+</p>
 <br>
 We all know the plight of migrant labourers post-COVID-19.
 A lot of the daily-wage-workers rushed to their homes in villages when the lockdown was instated. Now that these restrictions are being lifted, it's a real challenge for them to find employment. A lot of old businesses have been shut down and many others are running at a reduced capacity. Workers can use their simple 2G Feature Phones to register themselves on a nationwide database of workers actively seeking for employment by just sending a message.
@@ -85,19 +87,25 @@ Here pin-code is the pin code of the location the worker wants to find employmen
 
 This adds the worker to the worker database and automatically finds the district of the worker like this:
 <br>
+<p align="center">
 <img src="https://i.ibb.co/tDg0QwQ/Group-4.png" alt="Group-4" border="0">
+  </p>
 <br />
 Now the worker will be listed in the Rozgar app for being hired by a potential employer. 
 
 ## For  Employers
 <br>
+<p align="center">
 <img src="https://analyticsindiamag.com/wp-content/uploads/2019/12/How-SMBs-In-India-Can-Unlock-Their-Potential-With-Analytics.jpg" />
+  </p>
 <br>
 Employers have been hit really hard by a shortage of both skilled and unskilled workers. These employers can use our app to provide the pin code of their home or workplace and their requirement(maid, labourer) etc. to search for relevant workers near them. The employers can then contact these workers and hire them. So there's a win-win situation for both the hiring and the hired.
 
 ## For NGOs
 <br>
+<p align="center">
 <img src="https://i.ibb.co/RzgvDq5/Group-6.png" alt="Group-6" border="0" />
+  </p>
 <br>
 We have integrated Firebase ML Kit to recognise text from images which can help all NGOs like https://nirmana.org and https://www.savengo.org which help poor people gain employment. If an NGO is maintaining a list of people seeking employment, they can directly scan it and bulk upload it on our database to accelerate the job search process instead of having to manually upload details of each worker one by one.
 
