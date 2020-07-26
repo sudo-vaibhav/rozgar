@@ -105,7 +105,8 @@ Employers have been hit really hard by a shortage of both skilled and unskilled 
 ## For NGOs
 <br>
 <p align="center">
-<img src="https://i.ibb.co/RzgvDq5/Group-6.png" alt="Group-6" border="0" />
+<img src="https://i.ibb.co/jZmcyWW/tilted.jpg" alt="tilted" border="0">
+<img src="https://i.ibb.co/86z038b/Group-7-1.png" alt="Group-7-1" border="0" />
   </p>
 <br>
 We have integrated Firebase ML Kit to recognise text from images which can help all NGOs like https://nirmana.org and https://www.savengo.org which help poor people gain employment. If an NGO is maintaining a list of people seeking employment, they can directly scan it and bulk upload it on our database to accelerate the job search process instead of having to manually upload details of each worker one by one.
