@@ -102,6 +102,10 @@ Now the worker will be listed in the Rozgar app for being hired by a potential e
 <br>
 Employers have been hit really hard by a shortage of both skilled and unskilled workers. These employers can use our app to provide the pin code of their home or workplace and their requirement(maid, labourer) etc. to search for relevant workers near them. The employers can then contact these workers and hire them. So there's a win-win situation for both the hiring and the hired.
 
+Here's the flow for employers to search for a worker:
+
+<img src="https://i.ibb.co/VHDsv6k/Group-9.png" alt="Group-9" border="0">
+
 ## For NGOs
 <br>
 <p align="center">
