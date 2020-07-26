@@ -22,6 +22,9 @@ Router.post("/message", async (req, res) => {
     `https://api.postalpincode.in/pincode/${pinCode}`
   );
   const district = resp.data[0].PostOffice[0].District;
+  console.log("district for send message : ", district);
+
+  // const { status, payload } =
   const { status, payload } = await saveWorker(
     sender,
     skillIndex,

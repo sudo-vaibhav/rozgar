@@ -1,21 +1,11 @@
 const mongoose = require("mongoose");
-//skill
-//pin code
-//mobile
+const skills = require("../constants/skills");
 
 const workerSchema = new mongoose.Schema(
   {
     skill: {
       type: String,
-      enum: [
-        "driver",
-        "labourer",
-        "maid",
-        "guard",
-        "carpenter",
-        "plumber",
-        "electrician",
-      ],
+      enum: skills,
       required: true,
     },
     pinCode: {

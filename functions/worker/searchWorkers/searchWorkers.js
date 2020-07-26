@@ -5,10 +5,10 @@ const searchWorkers = async (req, res) => {
   const { skill, page, pinCode } = req.query;
   console.log(req.query);
   const queryConditions = {};
-  if (skill) {
+  if (skill && skill.trim() != "") {
     queryConditions.skill = skill;
   }
-  if (pinCode) {
+  if (pinCode && pinCode.trim() != "") {
     queryConditions.pinCode = {
       $regex: "^" + pinCode.substr(0, 2),
     };
@@ -18,7 +18,7 @@ const searchWorkers = async (req, res) => {
   const data = await getPaginatedData(
     Worker,
     parseInt(page) || 1,
-    5,
+    10,
     "-__v -createdAt -updatedAt",
     queryConditions
   );

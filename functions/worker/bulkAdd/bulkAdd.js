@@ -2,6 +2,7 @@ const axios = require("axios");
 const saveWorker = require("../saveWorker/saveWorker");
 
 module.exports = async (req, res) => {
+  console.log("body of request", req.body);
   const { workersInfo } = req.body;
   const distinctPinCodes = new Set();
   workersInfo.forEach((worker) => {
@@ -25,6 +26,7 @@ module.exports = async (req, res) => {
   }
 
   for await (const worker of workersInfo) {
+    console.log("trying to add ", worker);
     await saveWorker(
       worker.mobile,
       worker.skillIndex,
