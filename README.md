@@ -108,7 +108,9 @@ Here's the flow for employers to search for a worker:
 <img src="https://i.ibb.co/VHDsv6k/Group-9.png" alt="Group-9" border="0">
 </p>
 <br>
+
 ## For NGOs
+
 <br>
 <p align="center">
 <img src="https://i.ibb.co/jZmcyWW/tilted.jpg" alt="tilted" border="0">
