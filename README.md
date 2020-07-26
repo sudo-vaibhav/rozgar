@@ -121,7 +121,7 @@ The list of workers just has to be given in the format:
   .
 ```
 
-## Getting Started
+# Getting Started
 **Note:** Make sure your Flutter environment is setup.
 
 #### Installation
