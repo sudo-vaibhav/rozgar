@@ -92,4 +92,34 @@ Now the worker will be listed in the Rozgar app for being hired by a potential e
 
 Employers have been hit really hard by a shortage of both skilled and unskilled workers. These employers can use our app to provide the pin code of their home or workplace and their requirement(maid, labourer) etc. to search for relevant workers near them. The employers can then contact these workers and hire them. So there's a win-win situation for both the hiring and the hired.
 
+## Getting Started
+**Note:** Make sure your Flutter environment is setup.
+
+#### Installation
+
+In the command terminal, run the following commands:
+
+    $ git clone https://github.com/vasumanhas000/rozgar-app.git
+    $ cd rozgar-app
+    $ flutter run
+
+# Simulate for iOS
+#### Method One
+    
+    Open the project in Xcode from ios/Runner.xcodeproj.
+    Hit the play button.
+
+#### Method Two
+
+    Run the following command in your terminal.
+    $ open -a Simulator
+    $ flutter run
+
+# Simulate for Android
+
+    Make sure you have an Android emulator installed and running.
+    Run the following command in your terminal.
+    $ flutter run
+
+##### Check out Flutter’s online [documentation](http://flutter.io/) for help getting start with your Flutter project.
 
