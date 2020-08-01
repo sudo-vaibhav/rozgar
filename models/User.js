@@ -35,8 +35,7 @@ const userSchema = new mongoose.Schema(
       unique: true,
     },
     organisations: {
-      type: [mongoose.Schema.Types.ObjectId],
-      ref: "Organisation",
+      type: [{ type: mongoose.Schema.Types.ObjectId, ref: "Organisation" }],
       required: true,
       default: [],
     },
