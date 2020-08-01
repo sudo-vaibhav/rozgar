@@ -5,11 +5,11 @@ const userSchema = new mongoose.Schema(
     isVerified: {
       type: Boolean,
       required: true,
-      default:false
+      default: false,
     },
     name: {
       type: String,
-      required: true
+      required: true,
     },
     mobile: {
       type: String,
@@ -17,25 +17,29 @@ const userSchema = new mongoose.Schema(
       required: true,
       unique: true,
     },
-    userAadhaarImage:{
+    userAadhaarImage: {
       type: String,
-      required:true
+      required: true,
     },
-    userUUID:{
+    userUUID: {
       type: String,
-      required:true,
-      unique:true
+      required: true,
+      unique: true,
     },
-    aadhaarNumber:{
+    aadhaarNumber: {
       type: String,
-      match:[/^\d{4}\s\d{4}\s\d{4}$/, "Only Valid Aadhaar Numbers are allowed"],
-      unique:true
+      match: [
+        /^\d{4}\s\d{4}\s\d{4}$/,
+        "Only Valid Aadhaar Numbers are allowed",
+      ],
+      unique: true,
     },
-    organisations:{
+    organisations: {
       type: [mongoose.Schema.Types.ObjectId],
-      ref: 'Organisation',
-      required:true
-    }
+      ref: "Organisation",
+      required: true,
+      default: [],
+    },
   },
   { timestamps: true }
 );

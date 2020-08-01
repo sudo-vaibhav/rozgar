@@ -1,5 +1,5 @@
 const Router = require("express").Router();
-const User = require("../../models/User")
+const User = require("../../models/User");
 
 Router.get("/", (req, res) => {
   // User.findOne({
@@ -9,7 +9,16 @@ Router.get("/", (req, res) => {
 });
 
 Router.post("/", (req, res) => {
-  return res.json({ m: "hi" });
+  const { userInfo } = req.body;
+  const name = userInfo.name;
+  const userUUID = req.user.user_id;
+  const mobile = req.user.phone_number;
+  const user = new User({
+    name, userUUID,mobile
+  })
+  await user.save()
+
+  return res.json(user);
 });
 
 module.exports = Router;
