@@ -2,7 +2,7 @@
 
 Rozgar is a humble app that aims to bring employment to the poorest of the poor of our country who don't have Whatsapp or Linkedin to search for jobs. 
 
-link to the NodeJS backend for this app : https://github.com/sudo-vaibhav/apptitude
+
 # The Problems This Solves
 ## For  Workers
 <br>
@@ -156,7 +156,7 @@ The list of workers just has to be given in the format:
 
 # Learnings from the Hackathon
 
-  The most important thing we feel that we learnt by participating in this hackathon is the importance of focusing on making an MVP and not getting stuck in the     petty and less important stuff. Had we focussed too much on the intricacies without considering our target audience and the users needs, we would have never been   able to finish this app. We would like to thank @ACM-VIT for this opportunity :blush:
+  The most important thing we feel that we learnt by participating in this hackathon is the importance of focusing on making an MVP and not getting stuck in the     petty and less important stuff. Had we focussed too much on the intricacies without considering our target audience and the users needs, we would have never been   able to finish this app.
 
 # Getting Started
 **Note:** Make sure your Flutter environment is setup.
