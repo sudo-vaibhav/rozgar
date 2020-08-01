@@ -30,6 +30,7 @@ module.exports = async (req, res) => {
   } else {
     //create new organisation
     const addedWorkerIds = await addMultipleWorkers(workersInfo);
+    //also update creater
     const leader = await User.findOne({
       userUUID: req.user.user_id,
     });
@@ -40,7 +41,11 @@ module.exports = async (req, res) => {
       leaderId: leader._id,
       workers: addedWorkerIds,
     });
+
     await newOrganisation.save();
+
+    leader.organisations = [...leader.organisations, newOrganisation._id];
+    await leader.save();
 
     return res.status(200).send({
       message: "New organisation created",

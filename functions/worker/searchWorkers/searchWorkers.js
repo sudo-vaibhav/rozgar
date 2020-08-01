@@ -5,7 +5,7 @@ const searchWorkers = async (req, res) => {
   const { skill, page, pinCode } = req.query;
   console.log(req.query);
   const queryConditions = {
-    organisationMember: false,
+    // organisationMember: false,
   };
   if (skill && skill.trim() != "") {
     queryConditions.skill = skill;

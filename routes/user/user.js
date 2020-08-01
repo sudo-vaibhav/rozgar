@@ -5,13 +5,19 @@ Router.get("/", async (req, res) => {
   User.findOne({ userUUID: req.user.user_id })
     .populate("organisations")
     .exec(function (err, result) {
-      return res.status(200).json(result);
-    })
-    .catch((err) => {
-      res.status(404).json({
-        message: err,
-      });
+      if (result) {
+        return res.status(200).json(result);
+      } else {
+        return res.status(404).json({
+          message: "user not found",
+        });
+      }
     });
+  // .catch((err) => {
+  //   res.status(404).json({
+  //     message: err,
+  //   });
+  // });
   // return res.json(req.user);
 });
 
@@ -25,9 +31,12 @@ Router.post("/", async (req, res) => {
     userUUID,
     mobile,
   });
-  await user.save();
-
-  return res.json(user);
+  try {
+    await user.save();
+    return res.json(user);
+  } catch (err) {
+    return res.json({ ...err, message: err.message });
+  }
 });
 
 module.exports = Router;

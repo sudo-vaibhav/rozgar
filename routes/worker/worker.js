@@ -7,7 +7,11 @@ const searchWorkers = require("../../functions/worker/searchWorkers/searchWorker
 const bulkadd = require("../../functions/worker/bulkAdd/bulkAdd");
 const checkAuth = require("../../middlewares/checkAuth");
 
-Router.get("/", checkAuth, searchWorkers);
+Router.get(
+  "/",
+  // checkAuth,
+  searchWorkers
+);
 
 Router.post("/bulkadd", checkAuth, bulkadd);
 Router.post("/message", async (req, res) => {
