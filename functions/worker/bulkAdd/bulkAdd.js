@@ -1,10 +1,10 @@
 const Organisation = require("../../../models/Organisation");
 // const Worker = require("../../../models/Worker");
 const addMultipleWorkers = require("../addMultipleWorkers/addMultipleWorkers");
+const User = require("../../../models/User");
 module.exports = async (req, res) => {
   console.log("body of request", req.body);
   const { workersInfo, organisationInfo, organisationId } = req.body;
-
   if (organisationId) {
     console.log("trying to update organisation and add more workers");
     const organisation = await Organisation.findById(organisationId);
@@ -30,12 +30,14 @@ module.exports = async (req, res) => {
   } else {
     //create new organisation
     const addedWorkerIds = await addMultipleWorkers(workersInfo);
+    const leader = await User.findOne({
+      userUUID: req.user.user_id,
+    });
     const newOrganisation = new Organisation({
       name: organisationInfo.name,
       city: organisationInfo.city,
       domain: organisationInfo.domain,
-      // leaderId: req.user._id,
-      leaderId: "req.user._id",
+      leaderId: leader._id,
       workers: addedWorkerIds,
     });
     await newOrganisation.save();

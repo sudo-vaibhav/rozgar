@@ -19,7 +19,7 @@ const userSchema = new mongoose.Schema(
     },
     userAadhaarImage: {
       type: String,
-      required: true,
+      // required: true,
     },
     userUUID: {
       type: String,
