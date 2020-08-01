@@ -20,10 +20,10 @@ const saveWorker = async (
 
         worker
           .save()
-          .then((newUser) => {
+          .then((newWorker) => {
             resolve({
               status: 200,
-              payload: newUser,
+              payload: newWorker,
             });
           })
           .catch((err) => {

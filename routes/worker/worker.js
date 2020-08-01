@@ -5,9 +5,11 @@ const axios = require("axios");
 const saveWorker = require("../../functions/worker/saveWorker/saveWorker");
 const searchWorkers = require("../../functions/worker/searchWorkers/searchWorkers");
 const bulkadd = require("../../functions/worker/bulkAdd/bulkAdd");
-Router.get("/", searchWorkers);
+const checkAuth = require("../../middlewares/checkAuth");
 
-Router.post("/bulkadd", bulkadd);
+Router.get("/", checkAuth, searchWorkers);
+
+Router.post("/bulkadd", checkAuth, bulkadd);
 Router.post("/message", async (req, res) => {
   console.log("received message/worker create request");
   const { message, sender } = req.body;

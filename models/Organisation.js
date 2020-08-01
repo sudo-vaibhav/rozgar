@@ -8,6 +8,9 @@ const organisationSchema = new mongoose.Schema(
       required: true,
       unique: true,
     },
+    domain: {
+      type: String,
+    },
     city: {
       type: String,
       required: true,
