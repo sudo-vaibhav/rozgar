@@ -31,7 +31,7 @@ const saveWorker = async (
             const returnValue = {
               status: 400,
               payload: {
-                message: "worker already registered",
+                message: err.message,
               },
             };
             console.log(returnValue);
