@@ -1,14 +1,14 @@
 const Router = require("express").Router();
 const User = require("../../models/User");
 
-Router.get("/", (req, res) => {
+Router.get("/", aysnc (req, res) => {
   // User.findOne({
   //   userUUID : req.user
   // })
   return res.json(req.user);
 });
 
-Router.post("/", (req, res) => {
+Router.post("/", async (req, res) => {
   const { userInfo } = req.body;
   const name = userInfo.name;
   const userUUID = req.user.user_id;
