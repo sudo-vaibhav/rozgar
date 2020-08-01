@@ -1,7 +1,7 @@
 const Router = require("express").Router();
 const User = require("../../models/User");
 
-Router.get("/", aysnc (req, res) => {
+Router.get("/", async (req, res) => {
   // User.findOne({
   //   userUUID : req.user
   // })
