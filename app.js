@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 //importing mongoose models
 const Organisation = require("./models/Organisation");
 const Worker = require("./models/Worker");
-
+const User = require("./models/User");
 const workerRouter = require("./routes/worker/worker");
 const userRouter = require("./routes/user/user");
 
@@ -32,7 +32,7 @@ const checkAuth = require("./middlewares/checkAuth");
 var db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", async () => {
-  await Promise.all([Organisation.init(), Worker.init()]);
+  await Promise.all([Organisation.init(), Worker.init(), User.init()]);
   console.log("db connected");
   app.use("/worker", workerRouter);
   app.use("/user", checkAuth, userRouter);
