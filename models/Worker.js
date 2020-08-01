@@ -23,6 +23,11 @@ const workerSchema = new mongoose.Schema(
     district: {
       type: String,
     },
+    organisationMember: {
+      type: Boolean,
+      default: false,
+      required: true,
+    },
   },
   { timestamps: true }
 );

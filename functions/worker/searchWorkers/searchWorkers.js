@@ -4,7 +4,9 @@ const Worker = require("../../../models/Worker");
 const searchWorkers = async (req, res) => {
   const { skill, page, pinCode } = req.query;
   console.log(req.query);
-  const queryConditions = {};
+  const queryConditions = {
+    organisationMember: false,
+  };
   if (skill && skill.trim() != "") {
     queryConditions.skill = skill;
   }

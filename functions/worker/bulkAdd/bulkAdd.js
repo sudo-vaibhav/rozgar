@@ -31,10 +31,11 @@ module.exports = async (req, res) => {
       worker.mobile,
       worker.skillIndex,
       worker.pinCode,
-      pinCodeToDistrictMap[worker.pinCode]
+      pinCodeToDistrictMap[worker.pinCode],
+      true
     );
   }
-  console.log("mappings : ", pinCodeToDistrictMap);
+  // console.log("mappings : ", pinCodeToDistrictMap);
 
   return res.status(200).send({
     message: "bulk add operation carried out",

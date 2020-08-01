@@ -1,6 +1,12 @@
 const Worker = require("../../../models/Worker");
 const skills = require("../../../constants/skills");
-const saveWorker = async (sender, skillIndex, pinCode, district) => {
+const saveWorker = async (
+  sender,
+  skillIndex,
+  pinCode,
+  district,
+  organisationMemberBool = false
+) => {
   return new Promise((resolve, reject) => {
     Worker.init()
       .then(() => {
@@ -9,6 +15,7 @@ const saveWorker = async (sender, skillIndex, pinCode, district) => {
           skill: skills[parseInt(skillIndex) - 1],
           pinCode,
           district,
+          organisationMember: organisationMemberBool,
         });
 
         worker

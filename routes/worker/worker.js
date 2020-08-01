@@ -29,7 +29,8 @@ Router.post("/message", async (req, res) => {
     sender,
     skillIndex,
     pinCode,
-    district
+    district,
+    false
   );
   return res.status(status).send(payload);
 });
