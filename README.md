@@ -137,7 +137,7 @@ The list of workers just has to be given in the format:
   The about us section of the app has a webview to the PM CARES Fund for COVID-19 Relief where you can go and donate to help in the battle against Coronavirus.
   
   ## Medium: Integrate Firebase ML Kit in your App :white_check_mark:
-  The text recognition feature for NGOs for bulk addition of workers to database uses Firebase ML Vision Kit unde the hood.
+  The text recognition feature for NGOs for bulk addition of workers to database uses Firebase ML Vision Kit under the hood.
   
   ## Hard: Implement Pagination :white_check_mark:
   The search workers part for Employers has pagination implemented in it and fetches 10 workers in each API request and shows them to the user.
@@ -150,11 +150,11 @@ The list of workers just has to be given in the format:
   
 # Accomplishments and Completion Status
 
-  The biggest accomplishment is that we were able to complete all the features that we planned to implement within the time frame. We were also able to include all   the problem statements in our app in a meaningful manner. Overall we are really happy with the app and we feel it can actually help thousands of people who are     struggling to put food on the table for themselves and their families.
+  The biggest accomplishment is that we were able to complete all the features that we planned to implement. We were also able to include all   the problem statements in our app in a meaningful manner. Overall we are really happy with the app and we feel it can actually help thousands of people who are     struggling to put food on the table for themselves and their families.
   
   As far as the completion status goes, the first stable build is complete and we can use all the functionalities of the app. If we had to make any changes after     this hack to this app, we would try to move the message handling service to a more scaleable (albeit more expensive) provider. But Integromat is good enough for   now.
 
-# Learnings from the Hackathon
+# Learnings from the Project
 
   The most important thing we feel that we learnt by participating in this hackathon is the importance of focusing on making an MVP and not getting stuck in the     petty and less important stuff. Had we focussed too much on the intricacies without considering our target audience and the users needs, we would have never been   able to finish this app.
 
@@ -189,6 +189,11 @@ In the command terminal, run the following commands:
 
 ##### Check out Flutter’s online [documentation](http://flutter.io/) for help getting start with your Flutter project.
 
+#### Instructions for running the NodeJS API
+    $ git clone https://github.com/sudo-vaibhav/rozgar.git
+    $ cd rozgar
+    $ npm i && node app.js
+    
 # App Screenshots
 <br>
 <p align="center">
